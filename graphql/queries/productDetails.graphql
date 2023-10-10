@@ -1,0 +1,38 @@
+query getProductDetails($slug: String) {
+  product(slug: $slug) {
+    id
+    name
+    description
+    carousel_images: assets {
+      source
+      ...imageMetaData
+    }
+    variants {
+      id
+      price
+      priceWithTax
+      currencyCode
+      taxRateApplied {
+        id
+        value
+      }
+    }
+    customFields {
+      resolution
+      colorMode
+      supportedApps
+      format
+      height
+      width
+      lamination
+      paperWeight
+      weigth
+    }
+
+    facetValues {
+      id
+      name
+      code
+    }
+  }
+}

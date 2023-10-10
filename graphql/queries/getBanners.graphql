@@ -1,0 +1,9 @@
+query getBanners {
+  activeChannel {
+    customFields {
+      bannerImage {
+        source
+      }
+    }
+  }
+}

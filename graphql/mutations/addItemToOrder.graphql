@@ -1,0 +1,9 @@
+mutation addItemToOrder($variantId: ID!, $quantity: Int!, $customFields: OrderLineCustomFieldsInput!) {
+  addItemToOrder(productVariantId: $variantId, quantity: $quantity, customFields: $customFields) {
+    __typename
+    ...on ErrorResult {
+      errorCode
+      message
+    }
+  }
+}

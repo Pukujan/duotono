@@ -1,0 +1,14 @@
+query getFavourites {
+  activeCustomer {
+    customFields {
+      favorites {
+        id
+        slug
+        assets {
+          source
+        }
+        name
+      }
+    }
+  }
+}

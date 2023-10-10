@@ -1,0 +1,6 @@
+query availableCountries {
+  availableCountries {
+    code
+    name
+  }
+}

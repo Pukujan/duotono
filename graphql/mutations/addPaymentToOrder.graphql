@@ -1,0 +1,9 @@
+mutation addPaymentToOrder($input:PaymentInput!) {
+  addPaymentToOrder(input: $input) {
+    __typename
+    ...on ErrorResult {
+      errorCode
+      message
+    }
+  }
+}

@@ -1,0 +1,11 @@
+query searchProduct($input:SearchInput!) {
+  search(input: $input) {
+    items {
+      slug,
+      productAsset {
+        preview
+      }
+      
+    }
+  }
+}

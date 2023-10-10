@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  color-scheme: light;
+}
+
+/* Custom Scroll Bar | Only for chromium browsers */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(92, 90, 90, 0.3);
+  box-shadow: inset 0 0 6px rgba(92, 90, 90, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+@layer base {
+
+  p,
+  *,
+  body {
+    /* @apply text-base; */
+    @apply text-[20px] leading-5 md:leading-[1.375em];
+  }
+
+  h1 {
+    /* @apply text-3xl sm:text-[54px]; */
+    @apply text-[2em] leading-none md:text-[2.5em] lg:text-[3em];
+  }
+
+  h2 {
+    /* @apply text-2xl sm:text-[40px]; */
+    @apply text-[1.625em] leading-tight md:text-[2em] lg:text-[2.25em];
+  }
+
+  h3 {
+    /* @apply text-xl sm:text-[36px]; */
+    @apply text-[1.375em] leading-tight md:text-[1.5em];
+  }
+
+  h4 {
+    /* @apply text-lg sm:text-[32px]; */
+    @apply text-[1.125em] leading-tight;
+  }
+
+  h5 {
+    @apply text-base leading-tight sm:text-2xl;
+    /* @apply text-[1em] md: md: lg: lg:; */
+  }
+
+  h6 {
+    @apply text-base sm:text-xl;
+    /* @apply text-[1em] md: md: lg: lg:; */
+  }
+}
+
+.category-filters::-webkit-scrollbar {
+  /* margin-top:0.5em; */
+  /* height:6px; */
+  width: 10px;
+}
+
+.category-filters::-webkit-scrollbar-track {
+  border: solid 3px transparent;
+}
+
+.category-filters::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 10px 10px #233E81;
+  border: solid 3px transparent;
+  border-radius: 500px;
+}

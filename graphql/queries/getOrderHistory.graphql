@@ -1,0 +1,22 @@
+query getOrderHistory {
+  activeCustomer {
+    orders {
+      items {
+        id
+        orderPlacedAt
+        state
+        totalWithTax
+        totalQuantity
+        
+       	lines {
+          customFields {
+            orderType
+          }
+          productVariant {
+            name
+          }
+        }
+      }
+    }
+  }
+}

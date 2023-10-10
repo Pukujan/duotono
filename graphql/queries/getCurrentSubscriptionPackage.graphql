@@ -1,0 +1,11 @@
+query getCurrentSubscriptionPackage($id:ID!) {
+  subscriptionPackage(id:$id) {
+    id
+    createdAt
+    variant{
+      id
+      name
+      price
+    }  
+  }
+}

@@ -1,0 +1,43 @@
+query activeOrders {
+  activeOrder {
+    state
+    customer {
+      id
+    }
+    discounts {
+      amount
+    }
+    subTotal
+    totalWithTax
+    taxSummary {
+      taxRate
+      __typename
+    }
+    shippingWithTax
+    shippingAddress {
+      fullName
+      phoneNumber
+      streetLine1
+      streetLine2
+      countryCode
+      city
+    }
+    lines {
+      id
+      discountedLinePriceWithTax
+      featuredAsset {
+        source
+      }
+      productVariant {
+        id
+        name
+      }
+      unitPrice
+      quantity
+      linePrice
+      customFields {
+        orderType
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation addActiveDevice($name: String!){
+  addActiveDevices(name:$name) {
+    id
+  }
+}

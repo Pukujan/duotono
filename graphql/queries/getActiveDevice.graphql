@@ -1,0 +1,8 @@
+query getActiveDevice {
+  activeCustomer {
+    firstName
+    customFields {
+      activeDevices 
+    }
+  }
+}

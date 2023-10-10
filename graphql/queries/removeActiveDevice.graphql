@@ -1,0 +1,5 @@
+mutation removeActiveDevice($name: String!){
+  removeActiveDevices(name:$name) {
+    id
+  }
+}

@@ -1,0 +1,5 @@
+fragment imageMetaData on Asset {
+  height
+  width
+  mimeType
+}

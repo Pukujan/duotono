@@ -1,0 +1,26 @@
+{
+  "brand_name": "Goonji",
+  "site_description": "Goonji website.",
+  "routes": [
+    {
+      "path": "/about",
+      "label": "About Us"
+    },
+    {
+      "path": "/faq",
+      "label": "FAQs"
+    },
+    {
+      "path": "/contact",
+      "label": "Contact Us"
+    },
+    {
+      "path": "/profile2",
+      "label": "Profile"
+    },
+    {
+      "path": "/checkout",
+      "label": "Checkout"
+    }
+  ]
+}

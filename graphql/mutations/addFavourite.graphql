@@ -1,0 +1,14 @@
+mutation addFavourite($favouriteIds:[ID!]) {
+  updateCustomer(input: { customFields: {favoritesIds: $favouriteIds } }) {
+  	customFields {
+      favorites {
+        slug
+        assets {
+          source
+        }
+        name
+        
+      }
+    }
+  }
+}

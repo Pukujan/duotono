@@ -1,0 +1,11 @@
+query allProducts($options: ProductListOptions) {
+  products(options: $options) {
+    items {
+      slug
+      assets {
+        source
+      }
+    }
+    totalItems
+  }
+}

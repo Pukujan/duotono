@@ -1,0 +1,13 @@
+mutation addSubscriptionToOrder($subscriptionPackageId: ID!){
+  addSubscriptionToOrder(subscriptionPackageId: $subscriptionPackageId) {
+    __typename
+    ... on Order {
+      id
+      code
+    }
+    ... on ErrorResult {
+      errorCode
+      message
+    }
+  }
+}

@@ -1,0 +1,10 @@
+query allSubscriptionPackages{
+  subscriptionPackages {
+    items {
+      id
+      variant {
+        name
+      }
+    }
+  }
+}

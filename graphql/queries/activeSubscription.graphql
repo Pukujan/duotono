@@ -1,0 +1,10 @@
+query getActiveSubscription {
+  activeSubscription {
+    id
+    customerId
+    orderId
+    packageId
+    createdAt
+    revokedAt
+  }
+}
